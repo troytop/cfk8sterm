@@ -8,7 +8,7 @@ RUN addgroup dev \
 
 COPY bin/* /usr/local/bin/
 COPY .ashrc /home/dev/.ashrc 
-# USER dev
+USER dev:dev
 WORKDIR /home/dev
 
 EXPOSE 8080 
