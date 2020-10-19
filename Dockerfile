@@ -6,7 +6,8 @@ RUN addgroup dev -g 2000 \
   && adduser -h /home/dev -G dev -D dev -u 2000 
 
 COPY bin/* /usr/local/bin/
-COPY .ashrc /home/dev/.ashrc 
+COPY .ashrc /home/dev/.ashrc
+
 USER dev
 WORKDIR /home/dev
 
