@@ -10,7 +10,6 @@ COPY .ashrc /home/dev/.ashrc
 
 USER dev
 WORKDIR /home/dev
-
 EXPOSE 8080 
 
 CMD ["/usr/local/bin/ttyd","-p","8080","/bin/sh"]
